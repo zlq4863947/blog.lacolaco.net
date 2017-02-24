@@ -1,0 +1,21 @@
+{
+  "name": "blog-lacolaco-net",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "hugo serve",
+    "build": "hugo",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laco0416/laco0416.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laco0416/laco0416.github.io/issues"
+  },
+  "homepage": "https://github.com/laco0416/laco0416.github.io#readme"
+}
