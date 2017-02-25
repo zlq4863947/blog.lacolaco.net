@@ -1,7 +1,7 @@
 +++
 draft = true
 title = "Access to global variables in Angular 2"
-date = "2016-08-04T10:24:38+09:00"
+date = "2016-10-04T10:24:38+09:00"
 
 +++
 
@@ -12,7 +12,9 @@ Don’t use `window` directly.
 Angular 2 has an ability to develop an application in cross-platform because it doesn’t depend on DOM. 
 But it’s breakable easily. If you use `window`,`document` or anything browser-specific, then of course your app will lose the ability.
 
-We often use `window` instance to get and set global variables. In browser platform, `window` is a single global context object. In the other side, Node.js environment provides a global context as `global`. To make our app platform-agnostic, we must absorb the difference.
+We often use `window` instance to get and set **global variables**. In browser platform, `window` is a single global context object. 
+In the other side, Node.js environment provides a global context as `global`. 
+To make our app platform-agnostic, we must **absorb** the difference.
 Don’t worry. Already we have a powerful stuff for that.
 
 **Dependency injection.**
