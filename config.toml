@@ -14,11 +14,11 @@ disqusShortName = "blog-lacolaco"
 
 [Params]
   logo = "img/icon.png"
-  ogImage = "//lacolaco.net/assets/images/icon.png"
+  ogImage = "//blog.lacolaco.net/assets/images/icon.png"
   subtitle = "JavaScript, Web, Angular"
 
 [Author]
-  name = "Suguru INATOMI"
+  name = "Laco"
   github = "laco0416"
   twitter = "laco0416"
   
