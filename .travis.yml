@@ -4,6 +4,7 @@ node:
   - 6
 
 install:
+  - export GOPATH=$HOME/go
   - go get -u -v github.com/spf13/hugo
   - npm install
 
