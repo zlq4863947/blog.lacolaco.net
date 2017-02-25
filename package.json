@@ -6,7 +6,8 @@
   "scripts": {
     "start": "hugo serve -D",
     "build": "hugo",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "deploy:ci": "npm run build && firebase deploy --token $FIREBASE_TOKEN"
   },
   "repository": {
     "type": "git",

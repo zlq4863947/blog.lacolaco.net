@@ -1,0 +1,17 @@
+language: node
+
+node:
+  - 6
+
+install:
+  - go get -u -v github.com/spf13/hugo
+  - npm install
+
+script:
+  - npm run build
+
+deploy:
+  provider: script 
+  script: npm run deploy:ci
+  on:
+    branch: master
