@@ -174,7 +174,7 @@ export class ComponentOutlet {
 
 Let's use the outlet.
 
-<iframe src="http://embed.plnkr.co/1dlbF4/" width="100%" height="300" frameborder="0"></iframe>
+<iframe src="https://embed.plnkr.co/1dlbF4/" width="100%" height="300" frameborder="0"></iframe>
 
 ```ts
 @Component({
