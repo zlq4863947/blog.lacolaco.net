@@ -1,4 +1,4 @@
-baseurl = "//blog.lacolaco.net/"
+baseurl = "https://blog.lacolaco.net/"
 languageCode = "ja-JP"
 title = "<output type=\"laco\">"
 theme = "beautifulhugo"
