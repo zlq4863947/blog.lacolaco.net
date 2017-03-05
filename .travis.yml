@@ -5,7 +5,11 @@ node_js:
 branches:
   only:
     - master
-    
+
+before_install:
+  - git submodule sync
+  - git submodule update --init --recursive
+
 install:
   - export GOPATH=$HOME/go
   - export PATH=$GOPATH/bin:$PATH
