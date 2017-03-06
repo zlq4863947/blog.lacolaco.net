@@ -28,7 +28,7 @@
   <!-- Facebook OpenGraph tags -->
   <meta property="og:title" content="{{ .Title }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ .URL }}" />
+  <meta property="og:url" content="{{ .Site.BaseURL }}{{ .URL }}" />
   <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Site.Params.logo }}" />
 
   <script type="text/javascript" src="{{.Site.BaseURL}}js/highlight.min.js"></script>
