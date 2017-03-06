@@ -15,6 +15,7 @@ enableEmoji = true
 
 [Params]
   logo = "img/icon.png"
+  ogImage = "https://blog.lacolaco.net/assets/images/icon.png"
   subtitle = "JavaScript, Web, Angular"
 
 [Author]
