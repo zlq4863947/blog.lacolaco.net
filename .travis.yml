@@ -9,7 +9,7 @@ branches:
 install:
   - export GOPATH=$HOME/go
   - export PATH=$GOPATH/bin:$PATH
-  - go get -u -v github.com/spf13/hugo && hugo version
+  - go get -u github.com/spf13/hugo && hugo version
   - npm -g install firebase-tools
   - npm install
 
