@@ -142,3 +142,9 @@ Woohoo!!!!! :tada::tada::tada::tada::tada:
 - `else`テンプレートで偽のときのテンプレートを指定できる
 - `let`による変数化で`async`パイプとの親和性が改善される
 
+----
+**Angular 4.0 Features**
+
+- [新しいngIfの使い方](/post/ng4-feature-ngif/)
+- [Metaサービスの使い方](/post/ng4-feature-meta-service/)
+- [formsモジュールの更新について](/post/ng4-feature-forms-update/)

@@ -102,3 +102,10 @@ metaService.addTags([
 `Meta`についてもっと知りたい方は[ソースコード](https://github.com/angular/angular/blob/master/modules/%40angular/platform-browser/src/browser/meta.ts)や、
 [テストコード](https://github.com/angular/angular/blob/master/modules/%40angular/platform-browser/test/browser/meta_spec.ts)を
 読むとよいでしょう。
+
+----
+**Angular 4.0 Features**
+
+- [新しいngIfの使い方](/post/ng4-feature-ngif/)
+- [Metaサービスの使い方](/post/ng4-feature-meta-service/)
+- [formsモジュールの更新について](/post/ng4-feature-forms-update/)
