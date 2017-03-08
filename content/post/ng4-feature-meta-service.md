@@ -97,7 +97,7 @@ metaService.addTags([
 今回導入された`Meta`はAngular内部で統合されているので、
 将来的にはUniversalによるサーバーサイドレンダリング時にも使えて、SEOのためのmetaタグ操作も可能になるよう設計されています。
 ぜひ独自のサービスから組み込みの`Meta`に乗り換えておきたいところです。
-ただし、このAPIはまだ_experimental_なので、半年後の次期メジャーアップデート(5.0)の時には多少の破壊的変更が入るかもしれないことに留意しましょう。
+ただし、このAPIはまだexperimentalなので、半年後の次期メジャーアップデート(5.0)の時には多少の破壊的変更が入るかもしれないことに留意しましょう。
 
 `Meta`についてもっと知りたい方は[ソースコード](https://github.com/angular/angular/blob/master/modules/%40angular/platform-browser/src/browser/meta.ts)や、
 [テストコード](https://github.com/angular/angular/blob/master/modules/%40angular/platform-browser/test/browser/meta_spec.ts)を
