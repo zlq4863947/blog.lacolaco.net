@@ -148,3 +148,4 @@ Woohoo!!!!! :tada::tada::tada::tada::tada:
 - [新しいngIfの使い方](/post/ng4-feature-ngif/)
 - [Metaサービスの使い方](/post/ng4-feature-meta-service/)
 - [formsモジュールの更新について](/post/ng4-feature-forms-update/)
+- [core/commonモジュールの変更について](/post/ng4-feature-core-update/)
