@@ -65,4 +65,4 @@ Angular 4.0からは、テンプレート中の`<form>`には自動的に`novali
 - [Metaサービスの使い方](/post/ng4-feature-meta-service/)
 - [formsモジュールの更新について](/post/ng4-feature-forms-update/)
 - [core/commonモジュールの変更について](/post/ng4-feature-core-update/)
-
+- [router/http/animationsモジュールの変更について](/post/ng4-feature-libs-update/)
