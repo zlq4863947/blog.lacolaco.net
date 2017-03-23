@@ -1,12 +1,14 @@
 body {
   font-size: 16px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 300;
 }
 p {
     margin: 10px 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-weight: bold;
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -14,4 +16,20 @@ h1,h2,h3,h4,h5,h6 {
 .blog-post li {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
+}
+
+code {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    color: black;
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+}
+
+code::before, code::after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
 }
