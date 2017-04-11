@@ -76,7 +76,7 @@ class NgIfThenElse implements OnInit {
 
 これまでは真の場合と偽の場合にそれぞれ逆の条件の`ngIf`が必要でしたが、簡単に書けるようになります。
 
-### `ngIfLet`: 評価結果の変数化
+### `As`構文: 評価結果の変数化
 
 これこそが`ngIf`最大の変更点です。
 `ngIf`に渡された式の評価結果をローカル変数にアサインできるようになりました。
@@ -108,10 +108,10 @@ class NgIfThenElse implements OnInit {
 </div>
 ```
 
-Angular 4.0以降は、`let`を使うことで評価結果を変数として保持できます。つまり、`user$ | async`の結果であるユーザーデータを同期的に扱えるようになります。具体的には、次のように書けます。
+Angular 4.0以降は、`as`を使うことで評価結果を変数として保持できます。つまり、`user$ | async`の結果であるユーザーデータを同期的に扱えるようになります。具体的には、次のように書けます。
 
 ```html
-<div *ngIf="user$ | async; let user">
+<div *ngIf="user$ | async as user">
     <p>{{ user.name }}</p>
     <p>{{ user.age }}</p>
     <img [src]="user.icon">
@@ -126,7 +126,7 @@ Woohoo!!!!! :tada::tada::tada::tada::tada:
 `else`テンプレートと併用すれば、今まではとても複雑になっていたテンプレートが次のようにスッキリします。
 
 ```html
-<div *ngIf="user$ | async; let user; else userNotFound">
+<div *ngIf="user$ | async as user; else userNotFound">
     <p>{{ user.name }}</p>
     <p>{{ user.age }}</p>
     <img [src]="user.icon">
@@ -136,11 +136,20 @@ Woohoo!!!!! :tada::tada::tada::tada::tada:
 </ng-template>
 ```
 
+この`as`構文は`ngFor`でも使用できます。
+
+```html
+<div *ngFor="let user of (users$ | async) as users; index as i">
+    <span>{{ i + 1 }} / users.length</span>
+    <span>{{ user.name }}</span>
+</div>
+```
+
 ## まとめ
 
 - `then`テンプレートでテンプレートの分離と切り替えが可能になる
 - `else`テンプレートで偽のときのテンプレートを指定できる
-- `let`による変数化で`async`パイプとの親和性が改善される
+- `as`による変数化で`async`パイプとの親和性が改善される
 
 ----
 **Angular 4.0 Features**
